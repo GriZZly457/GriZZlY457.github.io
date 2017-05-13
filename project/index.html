@@ -1,85 +1,181 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Мой проект</title>
 	<meta charset="utf-8">
-	<meta name="description" content="secret">
-	<meta name="keywords" content="Комиксы, Фигурки, Marvel, DC, Bubble">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<link rel="stylesheet" type="text/css" href="slider.css">
-	<script src="jquery-3.2.1 (5)"></script>
-	<script src="flickity.pkgd.js"></script>
-	<script src="slider.js"></script>
-	<link rel="stylesheet" type="text/css" href="flickity.css">
+	<link rel="stylesheet" type="text/css" href="finder.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<title>Витринаж</title>
 </head>
 <body>
 	<header>
-		<a href="#" title="На главную">
+		<a href="#" title="На главную" class="top">
 			<div class="logo"></div>
-
-			<h1>"______________"</h1>
 		</a>
 		<form>
- 			<input type="text" placeholder="Поиск...">
+ 			<input type="text" placeholder="Искать здесь...">
  			<button type="submit"></button>
 		</form>
 		<nav>
 			<ul class="menu-main">
-				<li><a href="" class="current">Главная</a></li>
-				<li><a href="">О Нас</a></li>
-				<li><a href="">Форум</a></li>
-				<li><a href="">Контакты</a></li>
+				<li><a href="#" class="current">Главная</a></li>
+				<li><a href="#">О Нас</a></li>
+				<li><a href="#">Форум</a></li>
+				<li><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
 	</header>
-
-	<div class="main-container">
-		<div class="slider">
+	<main>
+		<div class="main-container">
+		<div class="menu-slider">
+			<div class="slider">
 			<div class="slider-container">
-				<div class="slider-cell">
-					<div class="number">
-					</div>
-					<img src="images/i1.jpg">
+			<div class="slide">
+				<div class="number">
 				</div>
-
-				<div class="slider-cell">
-					<div class="number">
-					</div>
-					<img src="images/i2.jpg">
-				</div>
-
-				<div class="slider-cell">
-					<div class="number">
-					</div>
-					<img src="images/i3.jpg">
-				</div>
-
-				<div class="slider-cell">
-					<div class="number">
-					</div>
-					<img src="images/i4.jpg">
-				</div>
-
-
-				<div class="slider-cell">
-					<div class="number"> 
-					</div>
-					<img src="images/i5.jpg">
-				</div>
+				<img src="images/i1.jpg">
 			</div>
+
+			<div class="slide">
+				<div class="number">
+				</div>
+				<img src="images/i2.png">
+			</div>
+
+			<div class="slide">
+				<div class="number">
+				</div>
+				<img src="images/i3.jpg">
+			</div>
+
+			<div class="slide">
+				<div class="number">
+				</div>
+				<img src="images/i4.jpg">
+			</div>
+
+			<div class="slide">
+				<div class="number"> 
+				</div>
+				<img src="images/i5.jpg">
+			</div>
+
+			<a class="prev" onclick="plusSlide(-1)">&lt;</a>
+			<a class="next" onclick="plusSlide(1)">&gt;</a>
+
+			</div>
+			<div class="dot-container">
+			<span class="dot" onclick="currentSlide(1)"></span>	
+			<span class="dot" onclick="currentSlide(2)"></span>	
+			<span class="dot" onclick="currentSlide(3)"></span>	
+			<span class="dot" onclick="currentSlide(4)"></span>	
+			<span class="dot" onclick="currentSlide(5)"></span>		
 		</div>
-	</div>
-		
-		<main>
-			
-		</main>
+		</div>
+		</div>
+		</div>
+		<h2>Разделы</h2>
 
-	</div>
 
+
+			<div class="news-plates">
+
+				<section>
+
+					<img src="images/music.png">
+
+					<h3>Музыка</h3>
+
+					<article>
+					</article>
+
+				</section>
+
+				<section>
+
+					<img src="images/games.png">
+
+					<h3>Игры</h3>
+
+					<article>
+
+						 
+
+					</article>
+
+				</section>
+
+				<section>
+
+					<img src="images/art.png">
+
+					<h3>Изобразительное искусство</h3>
+
+					<article>
+
+
+					</article>
+
+				</section><section>
+
+					<img src="images/innovation.png">
+
+					<h3>Изобретательство и исследования</h3>
+
+					<article>
+
+						 
+
+					</article>
+
+				</section>
+
+				<section>
+
+					<img src="images/photo.png">
+
+					<h3>Фотография</h3>
+
+					<article>
+
+						 
+
+					</article>
+
+				</section>
+
+				<section>
+
+					<img src="images/writing.png">
+
+					<h3>Литература</h3>
+
+					<article>
+
+					</article>
+
+				</section>
+
+				<section>
+
+					<img src="images/sports.png">
+
+					<h3>Танцы</h3>
+
+					<article>
+
+
+					</article>
+
+				</section>
+
+			</div>
+	</main>
 	<footer>
-		<p>&copy;"Название проекта" 2017</p>
+		<p>&copy;201Created</p>
 	</footer>
-
+	<script src="main.js"></script>
+	<script src="slider.js"></script>
 </body>
 </html>

@@ -19,6 +19,7 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -27,46 +28,53 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
+
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
 
 /*Our reset*/
+
 a {
 	text-decoration:none;
 	color: #000;
 }
 
-/*Styles*/
-
 body {
-	background-color: #F1F1F1;
+	background: linear-gradient(45deg,#a600ff,#40e6a7);
+	font-family:"century gothic";
 }
 
 header {
 	position: relative;
 	width: 100%;
 	padding: 30px 10px;
-
 }
-* {box-sizing: border-box;}
+
+form,input,button {box-sizing: border-box;}
+
 form {
   width: auto;
   float: right;
   margin-right: 30px;
 }
+
 input {
   width: 250px;
   height: 42px;
@@ -78,9 +86,11 @@ input {
   position: relative;
   transition: .3s linear;
 }
+
 input:focus {
   width: 300px;
 }
+
 button {
   width: 42px;
   height: 42px;
@@ -90,40 +100,49 @@ button {
   top: -2px;
   right: 0;
 }
+
 button:before{
   content: "\f002";
   font-family: FontAwesome;
   color: #324b4e;
 }
+
+}
 .logo {
-	display: inline-block;
+	display:block;
 	width: 80px;
 	height: 120px;
-	background:url(images/geek.png) no-repeat center;
+	background:url(images/logo.png) no-repeat center;
 	background-size: 90%;
-	vertical-align: top;
+	vertical-align: top-left;
 }
 
 @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+
 .menu-main {
   list-style: none;
   margin: 40px 0 5px;
   padding: 25px 0 5px;
   text-align: center;
   background: white;
+  background-opacity: 0.9;
 }
+
 .menu-main li {
 	display: inline-block;
 }
+
 .menu-main li:after {
   content: "|";
   color: #606060;
   display: inline-block;
   vertical-align:top;
 }
+
 .menu-main li:last-child:after {
 	content: none;
 }
+
 .menu-main a {
   text-decoration: none;
   font-family: 'Ubuntu Condensed', sans-serif;
@@ -135,14 +154,19 @@ button:before{
   text-transform: uppercase;
   display: inline-block;
   transition: color .2s;
+  border-radius: 100px;
 }
+
 .menu-main a, .menu-main a:visited {
 	color: #9d999d;
 }
+
 .menu-main a.current, .menu-main a:hover{
 	color: #feb386;
 }
+
 .menu-main a:before,
+
 .menu-main a:after {
   content: "";
   position: absolute;
@@ -154,8 +178,16 @@ button:before{
   background: #feb386;
   transition: .8s;
 }
+
 .menu-main a:hover:before, .menu-main .current:before {
 	left: 0;
+}
+
+.menu {
+	flex: 1;
+}
+.slider {
+	flex: 3;
 }
 
 .menu-main a:hover:after, .menu-main .current:after {
@@ -163,23 +195,26 @@ button:before{
 }   
 
 @media (max-width: 550px) {
+
 .menu-main {
 	padding-top: 0;
 }
+
 .menu-main li {
 	display: block;
 }
+
 .menu-main li:after {
 	content: none;
 }
+
 .menu-main a {
   padding: 25px 0 20px; 
   margin: 0 30px;
 }
 }
-
 h1 {
-	display: inline-block;
+	display: inline-flex;
 	padding: 20px;
 	vertical-align: top;
 	font-size: 2em;
@@ -191,6 +226,8 @@ h1 {
 
 .menu-slider {
 	display: flex;
+	position: relative;
+	width: auto;
 }
 
 nav {
@@ -214,7 +251,6 @@ ul li a:hover {
 	color: #1faee9;
 }
 
-
 main {
 	padding:30px 0;
 }
@@ -225,10 +261,44 @@ h2 {
 	text-transform: uppercase;
 }
 
-footer {
-	background-color: grey;
-	padding: 40px 20px;
-	font-size: 1em;
-	border:5px solid white;
+.news-plates {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: #F1F1F1;
+	position: relative;
+}
 
+.news-plates section {
+	position: relative;
+	box-sizing: border-box;
+	width: 13%;
+	padding: 10px;
+	text-align: center;
+	transition: transform 0.2s ease;
+	border-radius: 30px;
+}
+
+.news-plates section:hover {
+	transform: scale(1.03);
+	cursor: pointer;
+}
+
+.news-plates section img {
+	width: 50%;
+	
+}
+.news-plates section h3 {
+	font-size: 1em;
+	font-weight: 800;
+	padding: 8px;
+}
+
+.news-plates section article {
+	font-size: 1em;
+	padding: 8px;
+}
+
+footer {
+	color:white;
 }
