@@ -1,181 +1,87 @@
 <!DOCTYPE html>
-<html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<link rel="stylesheet" type="text/css" href="slider.css">
-	<link rel="stylesheet" type="text/css" href="finder.css">
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-	<title>Витринаж</title>
+	<meta lang="ru">
+	<title></title>
 </head>
 <body>
-	<header>
-		<a href="#" title="На главную" class="top">
-			<div class="logo"></div>
-		</a>
-		<form>
- 			<input type="text" placeholder="Искать здесь...">
- 			<button type="submit"></button>
-		</form>
-		<nav>
-			<ul class="menu-main">
-				<li><a href="#" class="current">Главная</a></li>
-				<li><a href="#">О Нас</a></li>
-				<li><a href="#">Форум</a></li>
-				<li><a href="#">Контакты</a></li>
+<div id="wrap" style="margin-top: 0px; position: relative;">
+<!-- Navbar -->
+<div id="topBar">
+	 <div class="wrap">
+	<div class="logo"><a href="/"><img alt="W3layouts.com free mobile website templates" src="images/logo.png"></a></div>
+	<div class="right">
+		<div class="devices">
+		<ul>
+		<li><a class="web" href="#"><img alt="" src="images/monitor.png"></a></li>
+		<li><a class="Ipad-hori" href="#"><img alt="" src="images/ipad-icon.png"></a></li>
+		<li><a class="Ipad-vertical" href="#"><img alt="" src="images/ipad-landscape.png"></a></li>
+				<li><a href="/preview/?d=smartphone&amp;l=/epils-agency-singlepage-multipurpose-flat-bootstrap-responsive-web-template/&amp;o=var"><img alt="" src="images/iphone-icon.png"></a></li>
+		<li><a href="/preview/?d=smartphone&amp;l=/epils-agency-singlepage-multipurpose-flat-bootstrap-responsive-web-template/&amp;o=land"><img alt="" src="images/iphone-landscape.png"></a></li>
+		<li><a href="/preview/?d=mobile&amp;l=/epils-agency-singlepage-multipurpose-flat-bootstrap-responsive-web-template/"><img alt="" src="images/nokia-icon.png"></a></li>
+				</ul>
+	</div>
+		<!--<div class="social">
+			<ul>
+			<li>Share on </li>
+			<li><a href="mobile_demo.html"><img src="images/fb.png" alt=""></a></li>
+			<li><a href="http://w3layouts.com"><img src="images/tw.png" /></a></li>
+			<li><a href="mobile_demo.html"><img src="images/gp.png" alt=""></a></li>
+			<li><a href="mobile_demo.html"><img src="images/pin.png" alt=""></a></li>
 			</ul>
-		</nav>
-	</header>
-	<main>
-		<div class="main-container">
-		<div class="menu-slider">
-			<div class="slider">
-			<div class="slider-container">
-			<div class="slide">
-				<div class="number">
-				</div>
-				<img src="images/i1.jpg">
-			</div>
-
-			<div class="slide">
-				<div class="number">
-				</div>
-				<img src="images/i2.png">
-			</div>
-
-			<div class="slide">
-				<div class="number">
-				</div>
-				<img src="images/i3.jpg">
-			</div>
-
-			<div class="slide">
-				<div class="number">
-				</div>
-				<img src="images/i4.jpg">
-			</div>
-
-			<div class="slide">
-				<div class="number"> 
-				</div>
-				<img src="images/i5.jpg">
-			</div>
-
-			<a class="prev" onclick="plusSlide(-1)">&lt;</a>
-			<a class="next" onclick="plusSlide(1)">&gt;</a>
-
-			</div>
-			<div class="dot-container">
-			<span class="dot" onclick="currentSlide(1)"></span>	
-			<span class="dot" onclick="currentSlide(2)"></span>	
-			<span class="dot" onclick="currentSlide(3)"></span>	
-			<span class="dot" onclick="currentSlide(4)"></span>	
-			<span class="dot" onclick="currentSlide(5)"></span>		
+		</div>-->
+		<div class="go-back">
+		 	<a href="/epils-agency-singlepage-multipurpose-flat-bootstrap-responsive-web-template/">Download Template</a>
 		</div>
-		</div>
-		</div>
-		</div>
-		<h2>Разделы</h2>
+		<a title="Remove Frame" class="closeMe" id="close-button" href="https://p.w3layouts.com/demos/epilsagency/web" target="_blank"></a>
+	</div>
 
+	<div class="clear"></div>
+		 </div>
+</div>
+</div>
+<div id="device">
+<iframe name="livePreviewFrame" width="100%" height="100%" class="web" id="hw" src="https://p.w3layouts.com/demos/epilsagency/web" frameborder="0" noresize="noresize" style=" min-height: 100%;"> </iframe>
+</div>
+	<script>
+  var adjustFrame = function() {
+	var headerDimensions = $('#topBar').height();
+	$('#livePreviewFrame').height($(window).height() - headerDimensions);
+  }
+  $(document).ready(function() {
+	adjustFrame();
+	$('.closeMe').mouseover(function() {
+	  $('.closeMe').addClass('active');
+	}).mouseout(function() {
+	  $('.closeMe').removeClass('active');
+	});
+  });
 
+  $(window).resize(function() {
+	adjustFrame();
+  }).load(function() {
+	adjustFrame();
+  });
+</script>
+<script type="text/javascript">
+//		function to fix height of iframe!
+    var calcHeight = function() {
+	var headerDimensions = $('#headerlivedemo').height();
+	var selector = '#iframelive';
+	   if($('#wrap').hasClass('closed')) {
+		   $(selector).height($(window).height());
+	   } else {
+		   $(selector).height($(window).height() - headerDimensions);
+	   }
+    }
+    $(document).ready(function() {
+    calcHeight();
+    });
+    $(window).resize(function() {
+    calcHeight();
+    }).load(function() {
+    calcHeight();
+    });
+</script>
 
-			<div class="news-plates">
-
-				<section>
-
-					<img src="images/music.png">
-
-					<h3>Музыка</h3>
-
-					<article>
-					</article>
-
-				</section>
-
-				<section>
-
-					<img src="images/games.png">
-
-					<h3>Игры</h3>
-
-					<article>
-
-						 
-
-					</article>
-
-				</section>
-
-				<section>
-
-					<img src="images/art.png">
-
-					<h3>Изобразительное искусство</h3>
-
-					<article>
-
-
-					</article>
-
-				</section><section>
-
-					<img src="images/innovation.png">
-
-					<h3>Изобретательство и исследования</h3>
-
-					<article>
-
-						 
-
-					</article>
-
-				</section>
-
-				<section>
-
-					<img src="images/photo.png">
-
-					<h3>Фотография</h3>
-
-					<article>
-
-						 
-
-					</article>
-
-				</section>
-
-				<section>
-
-					<img src="images/writing.png">
-
-					<h3>Литература</h3>
-
-					<article>
-
-					</article>
-
-				</section>
-
-				<section>
-
-					<img src="images/sports.png">
-
-					<h3>Танцы</h3>
-
-					<article>
-
-
-					</article>
-
-				</section>
-
-			</div>
-	</main>
-	<footer>
-		<p>&copy;201Created</p>
-	</footer>
-	<script src="main.js"></script>
-	<script src="slider.js"></script>
-</body>
-</html>
+ */</body>

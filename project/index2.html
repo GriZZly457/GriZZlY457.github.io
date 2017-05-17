@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="main.css" rel="stylesheet" type="text/css">
+	<link href="slider.css" rel="stylesheet" type="text/css">
+	<link href="finder.css" rel="stylesheet" type="text/css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<title>Витринаж</title>
+</head>
+<body>
+	<header>
+		<a title="На главную" class="top" href="#">
+			<div class="logo"></div>
+		</a>
+		<form>
+ 			<input type="text" placeholder="Искать здесь...">
+ 			<button type="submit"></button>
+		</form>
+		<nav>
+			<ul class="menu-main">
+				<li><a class="current" href="index2.html">Главная</a></li>
+				<li><a href="aboutus.html">О Нас</a></li>
+				<li><a href="#">Форум</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<div class="main-container">
+		<div class="menu-slider">
+			<div class="slider">
+			<div class="slider-container">
+			<div class="slide" style="display: block;">
+				<div class="number">
+				</div>
+				<img src="images/i1.jpg">
+			</div>
+
+			<div class="slide" style="display: none;">
+				<div class="number">
+				</div>
+				<img src="images/i2.jpg">
+			</div>
+
+			<div class="slide" style="display: none;">
+				<div class="number">
+				</div>
+				<img src="images/i3.jpg">
+			</div>
+
+			<div class="slide" style="display: none;">
+				<div class="number">
+				</div>
+				<img src="images/i4.jpg">
+			</div>
+
+			<div class="slide" style="display: none;">
+				<div class="number"> 
+				</div>
+				<img src="images/i5.jpg">
+			</div>
+
+			<a class="prev" onclick="plusSlide(-1)">&lt;</a>
+			<a class="next" onclick="plusSlide(1)">&gt;</a>
+
+			</div>
+			<div class="dot-container">
+			<span class="dot" style="background: rgb(102, 102, 102);" onclick="currentSlide(1)"></span>	
+			<span class="dot" style="background: rgb(187, 187, 187);" onclick="currentSlide(2)"></span>	
+			<span class="dot" style="background: rgb(187, 187, 187);" onclick="currentSlide(3)"></span>	
+			<span class="dot" style="background: rgb(187, 187, 187);" onclick="currentSlide(4)"></span>	
+			<span class="dot" style="background: rgb(187, 187, 187);" onclick="currentSlide(5)"></span>		
+		</div>
+		</div>
+		</div>
+		</div>
+		<h2>Разделы</h2>
+			<div class="news-plates">
+				<section>
+					<img src="images/music.png">
+					<a href="music.html"><h3>Музыка</h3></a>
+					<article>
+					</article>
+				</section>
+
+				<section>
+					<img src="images/games.png">
+					<h3>Игры</h3>
+					<article>
+					</article>
+				</section>
+
+				<section>
+					<img src="images/art.png">
+					<h3><a href="section.html">Изобразительное искусство</a></h3>
+					<article>
+					</article>
+				</section>
+
+				<section>
+					<img src="images/innovation.png">
+					<h3>Изобретательство и исследования</h3>
+					<article>	 
+					</article>
+				</section>
+
+				<section>
+					<img src="images/photo.png">
+					<h3>Фотография</h3>
+					<article>	 
+					</article>
+				</section>
+
+				<section>
+					<img src="images/writing.png">
+					<h3>Литература</h3>
+					<article>
+					</article>
+				</section>
+				
+				<section>
+					<img src="images/sports.png">
+					<h3>Танцы</h3>
+					<article>
+					</article>
+				</section>
+
+			</div>
+	</main>
+	<footer>
+		<p>©201Created</p>
+	</footer>
+	<script src="main.js"></script>
+	<script src="slider.js"></script>
+</body>
+</html>

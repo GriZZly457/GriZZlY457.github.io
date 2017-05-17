@@ -1,0 +1,13 @@
+.main {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	width:200%;
+}
+
+img {
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	width:55%;
+	height: 100%;
+	z-index: -1;
+}
